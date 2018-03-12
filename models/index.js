@@ -13,9 +13,9 @@ const Page = db.define('page', {
     urlTitle: {
         type: Sequelize.STRING,
         allowNull: false,
-        validate: {
-            isUrl: true
-        },
+        // validate: {
+        //     isUrl: true
+        // },
         get() {
             const url = this.getDataValue('urlTitle');
             // 'this' allows you to access attributes of the instance

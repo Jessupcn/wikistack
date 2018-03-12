@@ -1,9 +1,9 @@
 
 const express = require('express');
-const router = express.Router();
+const app = express();
 
-router.use('/wiki/', require('./wiki'));
-router.use('/users/', require('./users'));
+app.use('/wiki/', require('./wiki'));
+app.use('/users/', require('./users'));
 
 
-module.exports = router;
+module.exports = app;
